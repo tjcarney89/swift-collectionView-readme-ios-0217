@@ -18,8 +18,7 @@ In this lesson we'll introduce you to collection views.
 
 ## What Are Collection Views?
 
-_Collection views_ are one of the fundamental views that ship with Cocoa Touch and iOS. They provide a more flexible layout to present an ordered set of data items. Collection views are primarily used to present items in a grid like arrangement but they are capable of much more. They are often used with apps that present a lot of data to the user. They are very similar to collection views but they allow for even more customization and can even scroll horizontally.
-
+_Collection views_ are one of the fundamental views that ship with Cocoa Touch and iOS. They provide a more flexible layout to present an ordered set of data items. Collection views are primarily used to present items in a gridlike arrangement but they are capable of much more. They are often used with apps that present a lot of data to the user. They are very similar to collection views but they allow for even more customization and can even scroll horizontally.
 
 Collection views are made up of _cells_. Each cell represents a single piece of data in a larger data set. You can define how to draw a single cell, and the collection view will take care of the work of drawing many cells and scrolling them.
 
@@ -29,7 +28,7 @@ Collection views are backed by a _data source_. The data source provides the pie
 
 As you've probably guessed by now, a collection view is a type of _view_ that is provided by Cocoa Touch. It is an instance of the class `UICollectionView`, which is a _subclass_ of `UIView`. This means that it provides all the functionality of a basic view (`UIView`), along with some functionality of its own.
 
-Namely, a collection view knows how to lay out data in _items_. (Think rows) It gets its data from a _source_ and draws each piece of that data set into a _cell_. Collection views also allow users to scroll through the entire data set, displaying a cell for each piece of data, and can even allow the user to _select_ a cell to bring up more details for that piece of data.
+Namely, a collection view knows how to lay out data in _items_. (Think rows.) It gets its data from a _source_ and draws each piece of that data set into a _cell_. Collection views allow users to scroll through the entire data set, displaying a cell for each piece of data, and can even allow the user to _select_ a cell to bring up more details for that piece of data.
 
 ### Powering Collection Views
 
@@ -55,8 +54,7 @@ Interface Builder only shows a basic example of how the collection view will loo
 
 Try building and running the app. In the simulator, you'll see this:
 
-![collection view in simulator](https://s3.amazonaws.com/learn-verified/collectionViewWithCells.png
-  )
+![collection view in simulator](https://s3.amazonaws.com/learn-verified/collectionViewWithCells.png)
 
 When the app is actually run, it is populated with data (in this case, some random cells with random colors). How does the app get populated with data? Is it magic?
 
@@ -66,8 +64,6 @@ The "magic" happens in the app's view controller. Open up `ViewController.swift`
 
 ```swift
     // MARK: - Collection View DataSource
-
-
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 100
@@ -90,7 +86,7 @@ Let's take a look at these methods in more detail.
 
 The first method is `collectionView(_:numberOfItemsInSection:)`. This method gets passed an `Int` representing a particular section of the collection view, and returns the number of _items_ present in that section. Since you're working with collection views with only one section in this example, `numberOfItemsInSection` will always be 0 (since sections are 0-indexed, like arrays).
 
-The relevant bit of this method is the single line that returns the number of items in the section. In this example app, you are creating a collection view that simply shows a differently colored cells in a collection, so this method simply returns an `Int` that you choose. Easy, right?
+The relevant bit of this method is the single line that returns the number of items in the section. In this example app, you are creating a collection view that simply shows different colored cells in a collection, so this method simply returns an `Int` that you choose. Easy, right?
 
 The final method, `collectionView(_:cellForItemAt:)`, is a bit more complicated. There's a lot going on in this method, so let's break it down bit by bit.
 
@@ -108,7 +104,7 @@ The method's first line of code is this:
 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "basicCell", for: indexPath)
 ```
 
-This is very similar to what you should have seen with a tableView. Using what you have learnt with tableviews apply the same thinking to collectionviews. Experiment with the collectionView in the storyboard and in code to get different results.
+This is very similar to what you should have seen with a tableView. Using what you have learnt with table views apply the same thinking to collection views. Experiment with the collection view in the storyboard and in code to get different results.
 
 In future lessons, you'll see how to build your own iOS app powered by a collection view yourself. For now, though, you've hopefully gained insight on how collection views in iOS work.
 
