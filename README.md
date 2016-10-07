@@ -1,6 +1,4 @@
-# Collection Views
-
-![Evan](http://i.giphy.com/13HgwGsXF0aiGY.gif)  
+# Collection Views 
 
 > Success is the good fortune that comes from aspiration, desperation, perspiration, and inspiration. -[Evan Esar](https://en.wikipedia.org/wiki/Evan_Esar)
 
