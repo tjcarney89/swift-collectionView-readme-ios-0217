@@ -104,6 +104,10 @@ let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "basicCell", 
 
 This is very similar to what you should have seen with a tableView. Using what you have learnt with table views apply the same thinking to collection views. Experiment with the collection view in the storyboard and in code to get different results.
 
+As an extra activity you should try changing the sizes of cells and the spacing between them. One of the challenges with making collection views is getting the spacing and sizing just right. Go to `main.storyboard`, then click on the `UICollectionView` and finally click on the Size Inspector to see the fields where you can change size and spacing.
+
+![collection view size inspector](https://s3.amazonaws.com/learn-verified/collectionViewCellSize.png)
+
 In future lessons, you'll see how to build your own iOS app powered by a collection view yourself. For now, though, you've hopefully gained insight on how collection views in iOS work.
 
 <a href='https://learn.co/lessons/collectionView' data-visibility='hidden'>View this lesson on Learn.co</a>
