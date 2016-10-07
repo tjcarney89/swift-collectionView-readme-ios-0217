@@ -1,8 +1,8 @@
 # Collection Views
 
-![Tzu](http://i.imgur.com/9k7Ar2Q.jpg?1)  
+![Evan](http://i.imgur.com/9k7Ar2Q.jpg?1)  
 
-> Do the difficult things while they are easy and do the great things while they are small. A journey of a thousand miles must begin with a single step. -[Lao Tzu](https://en.wikipedia.org/wiki/Laozi)
+> Success is the good fortune that comes from aspiration, desperation, perspiration, and inspiration. -[Evan Esar](https://en.wikipedia.org/wiki/Evan_Esar)
 
 ## Overview
 
